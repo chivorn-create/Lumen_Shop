@@ -6,9 +6,86 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/homepage.css">
     <script src="./assets/scripts/homepage.js" defer></script>
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <!-- changa one font -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Our Online Store</h1>
-    <p>Discover the best products at unbeatable prices!</p>
+    
+    <header class="header">
+        <span class="brand-name">LUMEN SHOP </span>
+        <nav class="navbar">
+            <a class="nav-item" href="/homepage.html">HOME</a>
+            <a class="nav-item" href="/product/product.html">COLLECTION</a>
+            <a class="nav-item" href="#">NEW ARRIVALS</a>
+            <a class="nav-item" href="#">FILTER</a>
+        </nav> 
+        <div class="other">
+            
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i><input class="input" type="text" name="search" placeholder="Search..."></div>
+            <div class="login"><i class="fa-regular fa-user"></i></div>
+            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-text">FROM</div>
+        <div class="banner-discount">50%</div>
+        <div class="banner-text">OFF</div>
+    </section>
+    <section class="card">
+        <a href="/product/menpage.html" class="card-body">
+            <div >
+            
+                <img href="/product/menpage.html" class="card-img" src="/img/Man/man1.jpg" alt="">
+                <p>MEN</p>
+            </div>
+        </a>
+        <a href="/product/womenpage.html" class="card-body">
+            <div >
+                <img class="card-img" src="/img/Woman/women1.jpg" alt="">
+                <p>WOMEN</p>
+            </div>
+        </a>
+        <a href="/product/kidpage.html" class="card-body">
+            <div >
+                <img class="card-img" src="/img/Kids/kidj.pg.jpg" alt="">
+                <p>KIDS</p>
+            </div>
+        </a>
+    </section>
+    <section class="footer-section">
+        <div class="follow">
+            <p>Follow us on</p>
+            <div >
+                <div ><a class="social-icons" href="#"><i class="fa-brands fa-facebook"></i> <span>Facebook</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-brands fa-twitter"></i> <span>Twitter</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-brands fa-youtube"></i> <span>YouTube</span></a></div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>Contact us</p>
+            <div class="contact-icons">
+                <div><a class="social-icons"  href="#"><i class="fa-solid fa-envelope"></i> <span>Lumen-shop@Email.com</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-solid fa-phone"></i> <span>(+855) 123 456 789</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-brands fa-telegram"></i> <span>Telegram</span></a></div>
+                <div><a class="social-icons" href="#"><i class="fa-solid fa-location-dot"></i> <span>Location</span></a></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 LUMEN SHOP. All rights reserved.</p>
+    </footer>
 </body>
 </html>
