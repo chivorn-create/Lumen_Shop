@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px ;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-body{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+    color:#000000;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price{
+    color: red;
+    font-size: 20px;
+}
+
+.discount{
+    color: #808080;
+}
+
+.favorit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.product-img{
+    width: 100% ;
+    height: 500px;
+}

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/homepage.css">
-    <script src="./assets/scripts/homepage.js" defer></script>
+    <!-- js link -->
+    <script src="/assets/script/homepage.js"></script>
 
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -18,16 +19,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    
+    
 </head>
 <body>
     
     <header class="header">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <span class="brand-name">LUMEN SHOP </span>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a class="nav-item" href="/homepage.html">HOME</a>
             <a class="nav-item" href="/product/product.html">COLLECTION</a>
             <a class="nav-item" href="#">NEW ARRIVALS</a>
-            <a class="nav-item" href="#">FILTER</a>
+            <div class="dropdown">
+                <button class="dropbtn">FILTER</button>
+                <div class="dropdown-content">
+                    <a  class="nav-item" href="/product/menpage.html">MEN</a>
+                    <a class="nav-item" href="/product/womenpage.html">WOMEN</a>
+                    <a class="nav-item" href="/product/kidpage.html">KIDS</a>
+                </div>
+            </div>
         </nav> 
         <div class="other">
             
@@ -36,6 +48,7 @@
             <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
 
         </div>
+        
     </header>
     <section class="banner">
         <div class="banner-text">FROM</div>
@@ -44,28 +57,28 @@
     </section>
     <section class="card">
         <a href="/product/menpage.html" class="card-body">
-            <div >
+
             
                 <img href="/product/menpage.html" class="card-img" src="/img/Man/man1.jpg" alt="">
                 <p>MEN</p>
-            </div>
+            
         </a>
         <a href="/product/womenpage.html" class="card-body">
-            <div >
+            
                 <img class="card-img" src="/img/Woman/women1.jpg" alt="">
                 <p>WOMEN</p>
-            </div>
+            
         </a>
         <a href="/product/kidpage.html" class="card-body">
-            <div >
-                <img class="card-img" src="/img/Kids/kidj.pg.jpg" alt="">
+            
+                <img class="card-img" src="/img/Kids/kid1.pg.jpg" alt="">
                 <p>KIDS</p>
-            </div>
+            
         </a>
     </section>
     <section class="footer-section">
         <div class="follow">
-            <p>Follow us on</p>
+            <p>Follow us </p>
             <div >
                 <div ><a class="social-icons" href="#"><i class="fa-brands fa-facebook"></i> <span>Facebook</span></a></div>
                 <div><a class="social-icons" href="#"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a></div>
