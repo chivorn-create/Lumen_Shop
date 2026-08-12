@@ -8,17 +8,114 @@ body{
     background-color: #ffff;
     height: 100vh;
 }
-.banner{
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header {
     width: 100%;
-    height: 200px;
-    background-color: #659287;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    
+    }
+
+.navbar {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #ffffff;
+    gap: 25px;
+    padding: 0 20px;
+    color: #25343F;
+    ; 
+    z-index: 999;
 }
+
+.nav-item {
+    
+    color: #524646;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #E63946;
+    transform: scale(1.1);
+}
+
+.brand-name {
+    color: #524646;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Irish Grover", system-ui;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: #524646;
+    /* padding: 10px 20px; */
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #524646;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #25343F;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid #BFC9D1;
+    color: #BFC9D1;
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+.input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
 .product-container ,.women-section{
     
     display: flex;
