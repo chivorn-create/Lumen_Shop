@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   MAIN
+========================= */
+.detail-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.detail-image img {
+    width: 100%;
+    height: 665px;
+    object-fit: cover;
+}
+
+/* =========================
+   INFORMATION
+========================= */
+.detail-info {
+    padding-top: 10px;
+}
+
+.detail-info h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   PRICE
+========================= */
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.sale-price {
+    color: red;
+    font-size: 27px;
+}
+
+.discount {
+    font-size: 20px;
+}
+
+.old-price {
+    font-size: 21px;
+}
+
+/* =========================
+   RATING
+========================= */
+.rating {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   COLOR
+========================= */
+.detail-info h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.color-option {
+    width: 160px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.color-option img {
+    width: 155px;
+    height: 195px;
+    object-fit: cover;
+}
+
+.color-option p {
+    margin-top: 7px;
+}
+
+/* =========================
+   SIZE + QUANTITY
+========================= */
+.selection-row {
+    display: flex;
+    gap: 55px;
+    margin-bottom: 20px;
+}
+
+.size-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.size-title span {
+    background: #ddd;
+    padding: 8px 28px;
+    font-size: 13px;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.size-buttons button {
+    width: 62px;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    background: #ddd;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.size-buttons button:hover {
+    background: #bbb;
+}
+
+.size-buttons button.active {
+    background: #222;
+    color: white;
+}
+
+/* =========================
+   QUANTITY
+========================= */
+.quantity-box {
+    width: 140px;
+    height: 45px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quantity-box button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* =========================
+   CART
+========================= */
+.cart-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.add-cart {
+    width: 320px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background: #ddd;
+    font-size: 18px;
+    cursor: pointer;    
+}
+
+.add-cart:hover {
+    background: #bbb;
+}
+
+.wishlist {
+    width: 65px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background: #ddd;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 850px) {
+    .detail-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .detail-image img {
+        height: 600px;
+    }
+    .selection-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -43,64 +43,64 @@
         
     </header>
     <section class="product-container">
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man1'">
+            <a href="product-detail.html?id=man1" class="card-body">
                 <img class="product-img" src="/img/Man/man1.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 1</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man2'">
+            <a href="product-detail.html?id=man2" class="card-body">
                 <img class="product-img" src="/img/Man/man2.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 2</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>        
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man3'">
+            <a href="product-detail.html?id=man3" class="card-body">
                 <img class="product-img" src="/img/Man/man3.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 3</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man4'">
+            <a href="product-detail.html?id=man4" class="card-body">
                 <img class="product-img" src="/img/Man/man4.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 4</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man5'">
+            <a href="product-detail.html?id=man5" class="card-body">
                 <img class="product-img" src="/img/Man/men5.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 5</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man6'">
+            <a href="product-detail.html?id=man6" class="card-body">
                 <img class="product-img" src="/img/Man/men6.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 6</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man7'">
+            <a href="product-detail.html?id=man7" class="card-body">
                 <img class="product-img" src="/img/Man/men7.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 7</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             </a>
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" onclick="window.location.href='product-detail.html?id=man8'">
+            <a href="product-detail.html?id=man8" class="card-body">
                 <img class="product-img" src="/img/Man/men8.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Man Product 8</h2>
@@ -132,5 +132,10 @@
     <footer class="footer">
         <p>&copy; 2023 LUMEN SHOP. All rights reserved.</p>
     </footer>
+    <script>
+    function viewProduct(id) {
+        window.location.href = `product-detail.html?id=${id}`;
+    }
+    </script>
 </body>
 </html>
