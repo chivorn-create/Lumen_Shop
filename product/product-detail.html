@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../assets/styles/product-detail.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="detail-container">
+        <!-- LEFT IMAGE -->
+        <div class="detail-image">
+            <img
+                id="mainImage"
+                src=""
+                alt="Product">
+        </div>
+        <!-- RIGHT INFORMATION -->
+        <div class="detail-info">
+            <h1 id="productName">
+                Product Name
+            </h1>
+            <!-- PRICE -->
+            <div class="price-section">
+                <span
+                    id="productPrice"
+                    class="sale-price">
+                    $0.00
+                </span>
+                <span
+                    id="productDiscount"
+                    class="discount">
+                    -40%
+                </span>
+                <span
+                    id="productOldPrice"
+                    class="old-price">
+                    $0.00
+                </span>
+            </div>
+            <!-- RATING -->
+            <div
+                id="rating"
+                class="rating">
+            </div>
+            <!-- COLOR -->
+            <h2>Color</h2>
+            <div class="color-option">
+                <img
+                    id="colorImage"
+                    src=""
+                    alt="Product color">
+
+                <p id="colorName">
+                    Pink
+                </p>
+            </div>
+            <!-- SIZE + QUANTITY -->
+            <div class="selection-row">
+                <!-- SIZE -->
+                <div class="size-section">
+                    <div class="size-title">
+                        <h2>Size:</h2>
+                        <span id="selectedSize">
+                            Selected Size
+                        </span>
+                    </div>
+                    <div class="size-buttons">
+                        <button onclick="selectSize('S')">
+                            S
+                        </button>
+                        <button onclick="selectSize('M')">
+                            M
+                        </button>
+                        <button onclick="selectSize('L')">
+                            L
+                        </button>
+                        <button onclick="selectSize('XL')">
+                            XL
+                        </button>
+                    </div>
+                </div>
+                <!-- QUANTITY -->
+                <div class="quantity-section">
+                    <h2>Quantity:</h2>
+                    <div class="quantity-box">
+                        <button onclick="decreaseQuantity()">
+                            [-]
+                        </button>
+                        <span id="quantity">
+                            1
+                        </span>
+                        <button onclick="increaseQuantity()">
+                            [+]
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- CART -->
+            <div class="cart-actions">
+                <button
+                    class="add-cart"
+                    onclick="addToCart()">
+                    Add to Cart
+                </button>
+                <button class="wishlist">
+                    ♡
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/script/product-detail.js"></script>
+</body>
+</html>
