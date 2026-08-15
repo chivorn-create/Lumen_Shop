@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header">
@@ -42,69 +44,69 @@
         
     </header>
     <section class="product-container">
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="0">
+            
                 <img class="product-img" src="/img/Kids/kid1.pg.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 1</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            
                 <img class="product-img" src="/img/Kids/kid2.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 2</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            
                 <img class="product-img" src="/img/Kids/kid3.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 3</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            
                 <img class="product-img" src="/img/Kids/kid4.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 4</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            
                 <img class="product-img" src="/img/Kids/kid5.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 5</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+            
                 <img class="product-img" src="/img/Kids/kid6.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 6</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+            
                 <img class="product-img" src="/img/Kids/kid7.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 7</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
-        <div class="card">
-            <a href="/" class="card-body">
+        <div class="card" data-aos="fade-up" data-aos-delay="700">
+            
                 <img class="product-img" src="/img/Kids/kid8.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Kid Product 8</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
-            </a>
+            
         </div>
     </section>
     <footer class="footer">
@@ -132,5 +134,13 @@
 
         <div class="last-footer"><p>&copy; 2023 LUMEN SHOP. All rights reserved.</p></div>
     </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+​<script>
+  // ដំណើការ AOS
+  AOS.init({
+    duration: 800, // រយៈពេល Animation រត់ (800ms = 0.8s)
+    once: false,   // ឲ្យរត់ Animation ឡើងវិញពេល scroll មកជួប
+  });
+</script>
 </body>
 </html>
