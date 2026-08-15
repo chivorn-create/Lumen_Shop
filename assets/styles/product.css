@@ -192,21 +192,28 @@ del{
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    color: #524646;
+    color: #ffff;
 
 }
 
 .social-icons {
     text-decoration: none;
-    color: #524646;
+    color: #ffff;
     font-size: 15px;
 }
 
 .footer {
     /* background-color: #E63946; */
-    color: #524646;
-    text-align: center;
+        
     padding: 20px;
     bottom: 0;
     width: 100%;
+    background-color: #B34A44;
+}
+.last-footer {
+    
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
 }
