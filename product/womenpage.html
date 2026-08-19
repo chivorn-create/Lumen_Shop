@@ -44,71 +44,71 @@
         
     </header>
     <section class="product-container">
-        <div class="card" data-aos="fade-up" data-aos-delay="0">
+        <a href="product-detail.html?id=women1" onclick="window.location.href='/product/product-detail.html?id=women1'" class="card" data-aos="fade-up" data-aos-delay="0">
             
                 <img class="product-img" src="/img/Woman/women1.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 1</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
+        </a>
+        <a href="product-detail.html?id=women2"  class="card" data-aos="fade-up" data-aos-delay="100" onclick="window.location.href='/product/product-detail.html?id=women2'">
             
                 <img class="product-img" src="/img/Woman/women2.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 2</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
+        </a>
+        <a href="product-detail.html?id=women3" onclick="window.location.href='/product/product-detail.html?id=women3'" class="card" data-aos="fade-up" data-aos-delay="200">
             
                 <img class="product-img" src="/img/Woman/women3.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 3</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
+        </a>
+        <a href="product-detail.html?id=women4" onclick="window.location.href='/product/product-detail.html?id=women4'" class="card" data-aos="fade-up" data-aos-delay="300">
             
                 <img class="product-img" src="/img/Woman/women4.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 4</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
+        </a>
         
-        <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <a href="product-detail.html?id=women5" onclick="window.location.href='/product/product-detail.html?id=women5'" class="card" data-aos="fade-up" data-aos-delay="400">
             
                 <img class="product-img" src="/img/Woman/women5.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 5</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="500">
+        </a>
+        <a href="product-detail.html?id=women6" onclick="window.location.href='/product/product-detail.html?id=women6'" class="card" data-aos="fade-up" data-aos-delay="500">
             
                 <img class="product-img" src="/img/Woman/women6.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 6</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="600">
+        </a>
+        <a href="product-detail.html?id=women7" onclick="window.location.href='/product/product-detail.html?id=women7'" class="card" data-aos="fade-up" data-aos-delay="600">
             
                 <img class="product-img" src="/img/Woman/women7.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 7</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="700">
+        </a>
+        <a href="product-detail.html?id=women8" onclick="window.location.href='/product/product-detail.html?id=women8'" class="card" data-aos="fade-up" data-aos-delay="700">
             
                 <img class="product-img" src="/img/Woman/women8.jpg" alt="">
                 <span class="favorit"><i class="fa-regular fa-heart"></i></span>
                 <h2>Women Product 8</h2>
                 <p class="price">$19.99 <span class="discount"><del>$10.00</del></span></p>
             
-        </div>
+        </a>
     </section>
     <footer class="footer">
         <section class="footer-section">
@@ -137,11 +137,15 @@
     </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 ​<script>
-  // ដំណើការ AOS
-  AOS.init({
-    duration: 800, // រយៈពេល Animation រត់ (800ms = 0.8s)
-    once: false,   // ឲ្យរត់ Animation ឡើងវិញពេល scroll មកជួប
-  });
+    // ដំណើការ AOS
+    AOS.init({
+        duration: 800, // រយៈពេល Animation រត់ (800ms = 0.8s)
+        once: false,   // ឲ្យរត់ Animation ឡើងវិញពេល scroll មកជួប
+    });
+
+    function viewProduct(id) {
+     window.location.href = `product-detail.html?id=${id}`;
+    }
 </script>
 </body>
 </html>
