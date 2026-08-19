@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
+    margin: 0;
+    padding: 0;
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px ;
@@ -125,7 +128,7 @@ body{
     gap: 20px;
 }
 
-.card-body{
+.card{
     position: relative;
     width: 300px;
     height: 500px;
@@ -166,28 +169,33 @@ body{
 .footer-section  {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
     text-decoration: none;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    color: #524646;
+    color: #ffff;
 
 }
 
 .social-icons {
     text-decoration: none;
-    color: #524646;
+    color: #ffff;
     font-size: 15px;
 }
 
-.footer {
-    /* background-color: #E63946; */
-    color: #524646;
-    text-align: center;
+.footer {  
     padding: 20px;
-    bottom: 0;
     width: 100%;
+    background-color: #B34A44;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.last-footer {
+    margin-bottom: 0px;
+    color: #ffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {

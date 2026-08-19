@@ -127,7 +127,72 @@ const products = {
         oldPrice: "29.99",
         discount: "-40%",
         color: "Pink"
-    }
+    },
+    // kids
+    kid1 : {
+        name : "Kids Product 1",
+        image : "/img/Kids/kid1.pg.jpg",
+        price : "10.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Black"
+    },
+    kid2 : {
+        name : "Kids Product 2",
+        image : "/img/Kids/kid2.jpg",
+        price : "15.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Blue"
+    },
+    kid3 : {
+        name : "Kids Product 3",
+        image : "/img/Kids/kid3.jpg",
+        price : "20.00",
+        oldPrice : "25.00",
+        discount : "-40%",
+        color : "White"
+    },
+    kid4 : {
+        name : "Kids Product 4",
+        image : "/img/Kids/kid4.jpg",
+        price : "30.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Green"
+    },
+    kid5 : {
+        name : "Kids Product 5",
+        image : "/img/Kids/kid5.jpg",
+        price : "10.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Black"
+    },
+    kid6 : {
+        name : "Kids Product 6",
+        image : "/img/Kids/kid6.jpg",
+        price : "10.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Gray"
+    },
+    kid7 : {
+        name : "Kids Product 7",
+        image : "/img/Kids/kid7.jpg",
+        price : "10.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Black"
+    },
+    kid8 : {
+        name : "Kids Product 1",
+        image : "/img/Kids/kid8.jpg",
+        price : "10.00",
+        oldPrice : "20.00",
+        discount : "-40%",
+        color : "Bisque"
+    },
 };
 /* =========================
    GET ID FROM URL
@@ -239,4 +304,8 @@ function addToCart() {
         " added to cart!"
     );
 
+}
+function toggleWishlist(i) {
+  // បន្ថែម ឬលុប class "active" ពេល Click
+  i.classList.toggle('active');
 }

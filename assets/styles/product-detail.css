@@ -175,7 +175,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 7px;
-    background: #ddd;
+    background: #3A86FF;
     font-size: 18px;
     cursor: pointer;    
 }
@@ -192,7 +192,22 @@ body {
     background: #ddd;
     font-size: 30px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+#wishlist-btn {
+    background-color: #e0e0e0; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+#wishlist-btn.active {
+    
+    color: #ff4d4d;       
+  }
 /* =========================
    RESPONSIVE
 ========================= */
@@ -207,5 +222,15 @@ body {
     .selection-row {
         flex-direction: column;
         gap: 20px;
+        
     }
+}
+
+.back, i {
+    text-decoration: none;
+    color: #222;
+    padding: 5px;
+    font-size: 30px;
+    border: none;
+    outline: none;
 }
