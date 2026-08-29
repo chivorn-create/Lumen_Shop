@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- CART CSS -->
+    <link rel="stylesheet" href="/assets/styles/cart.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <span class="brand-name">
+        LUMEN SHOP
+    </span>
+    <nav class="navbar" id="navbar">
+        <a class="nav-item" href="/homepage.html">
+            HOME
+        </a>
+        <a class="nav-item" href="/product/product.html">
+            COLLECTION
+        </a>
+        <a class="nav-item" href="#">
+            NEW ARRIVALS
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                FILTER
+            </button>
+            <div class="dropdown-content">
+                <a class="nav-item"
+                   href="/product/menpage.html">
+                    MEN
+                </a>
+                <a class="nav-item"
+                   href="/product/womenpage.html">
+                    WOMEN
+                </a>
+                <a class="nav-item"
+                   href="/product/kidpage.html">
+                    KIDS
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="other">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                class="input"
+                type="text"
+                name="search"
+                placeholder="Search..."
+            >
+        </div>
+        <div class="login">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="icon cart-icon" onclick="goToCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </div>
+    </div>
+</header>
+
+
+    <!-- SHOPPING CART -->
+
+    <main class="cart-page">
+        <h1>Shopping Cart</h1>
+        <section class="cart-container">
+            
+            <!-- TABLE HEADER -->
+            <div class="cart-header">
+
+                <div>Product</div>
+
+                <div>Price</div>
+
+                <div>Discount</div>
+
+                <div>QTY</div>
+
+                <div>Total</div>
+
+            </div>
+
+
+            <!-- PRODUCTS WILL BE INSERTED HERE -->
+
+            <div id="cartItems"></div>
+
+
+            <!-- CART SUMMARY -->
+
+            <div class="cart-summary">
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span id="subtotal">
+                        0.00$
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Shipping fee
+                    </span>
+
+                    <span>
+                        15.00$
+                    </span>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="summary-total">
+
+                    <strong>
+                        Total
+                    </strong>
+
+                    <strong id="grandTotal">
+                        15.00$
+                    </strong>
+
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/assets/script/cart.js"></script>
+
+</body>
+
+</html>

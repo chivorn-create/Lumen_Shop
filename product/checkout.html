@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="/assets/styles/checkout.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" >
+</head>
+<body>
+    <header class="header">
+        <button class="hamburger" onclick="toggleMenu()" >
+            ☰
+        </button>
+        <span class="brand-name">
+            LUMEN SHOP
+        </span>
+        <nav class="navbar" id="navbar" >
+            <a class="nav-item" href="/homepage.html" >
+                HOME
+            </a>
+            <a class="nav-item" href="/product/product.html">
+                COLLECTION
+            </a>
+            <a class="nav-item" href="#">
+                NEW ARRIVALS
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    FILTER
+                </button>
+                <div class="dropdown-content">
+                    <a class="nav-item" href="/product/menpage.html">
+                        MEN
+                    </a>
+                    <a class="nav-item"  href="/product/womenpage.html">
+                        WOMEN
+                    </a>
+                    <a class="nav-item" href="/product/kidpage.html">
+                        KIDS
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- RIGHT SIDE -->
+        <div class="other">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="input" type="text" placeholder="Search...">
+            </div>
+            <div class="login">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="icon" id="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <!-- =================================
+         CHECKOUT TITLE
+    ================================= -->
+    <main class="checkout-page">
+        <div class="checkout-title">
+            <h1>
+                CheckOut
+            </h1>
+        </div>
+        <!-- =================================
+             CHECKOUT CONTENT
+        ================================= -->
+        <section class="checkout-container">
+            <!-- =================================
+                 LEFT SIDE
+            ================================= -->
+            <div class="payment-section">
+                <h2>
+                    Select Payment Method
+                </h2>
+                <!-- PAYMENT METHODS -->
+                <button class="payment-method active" data-method="paypal" >
+                    Paypal
+                </button>
+                <button class="payment-method" data-method="visa">
+                    Visa **** **** **78
+                </button>
+                <button class="payment-method" data-method="cash">
+                    Cash on delivery
+                </button>
+                <!-- =================================
+                     CREDIT CARD
+                ================================= -->
+                <div class="card-form" id="cardForm">
+                    <h3> Add new credit/debit card </h3>
+                    <label> Card Holder Name * </label>
+                    <input type="text" id="cardHolder" placeholder="Ex: Lu Men" >
+                    <label> Card Number *</label>
+                    <input type="text" id="cardNumber" placeholder="0000 0000 0000">
+                    <div class="card-row">
+                        <div>
+                            <label>
+                                Expiry Date *
+                            </label>
+                            <input type="text" id="expiry" placeholder="02/30" >
+                        </div>
+                        <div>
+                            <label> CVV * </label>
+                            <input type="text" id="cvv" placeholder="374" >
+                        </div>
+                    </div>
+                    <label class="save-card">
+                        <input type="checkbox" id="saveCard" checked >
+                        <span> Save card for future payments </span>
+                    </label>
+                    <button class="save-card-btn" id="saveCardBtn">
+                        Save Card
+                    </button>
+                </div>
+            </div>
+            <!-- =================================
+                 RIGHT SIDE - ORDER SUMMARY
+            ================================= -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <!-- PRODUCTS FROM CART -->
+                <div id="checkoutItems" class="checkout-items" ></div>
+                <!-- SUMMARY -->
+                <div class="summary-row">
+                    <span> Items </span>
+                    <span id="itemCount"> 0 </span>
+                </div>
+                <div class="summary-row">
+                    <span> SubTotal</span>
+                    <span id="checkoutSubtotal"> 0.00$ </span>
+                </div>
+                <div class="summary-row">
+                    <span> Shipping</span>
+                    <span id="shipping"> 15.00$ </span>
+                </div>
+                <div class="summary-row">
+                    <span> Taxes </span>
+                    <span id="taxes">0.00$</span>
+                </div>
+                <hr>
+                <div class="summary-total">
+                    <strong>Total</strong>
+                    <strong id="checkoutTotal"> 15.00$</strong>
+                </div>
+                <button class="confirm-btn" id="confirmPayment">
+                    Confirm Payment
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="/assets/script/checkout.js"></script>
+</body>
+</html>

@@ -2,22 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <title>Product Detail</title>
-    <link rel="stylesheet" href="../assets/styles/product-detail.css">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- CART CSS -->
+    <link rel="stylesheet" href="/assets/styles/product-detail.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<<<<<<< HEAD
-    
-=======
-    <button onclick="window.history.back()" class="back" href="/product/"><i class="fa-solid fa-arrow-left"></i></button>
->>>>>>> ff53d8fb87598f16719f61e599130a32fa48524a
-    <div class="detail-container">
+<header class="header">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <span class="brand-name">
+        LUMEN SHOP
+    </span>
+    <nav class="navbar" id="navbar">
+        <a class="nav-item" href="/homepage.html">
+            HOME
+        </a>
+        <a class="nav-item" href="/product/product.html">
+            COLLECTION
+        </a>
+        <a class="nav-item" href="#">
+            NEW ARRIVALS
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                FILTER
+            </button>
+            <div class="dropdown-content">
+                <a class="nav-item"
+                   href="/product/menpage.html">
+                    MEN
+                </a>
+                <a class="nav-item"
+                   href="/product/womenpage.html">
+                    WOMEN
+                </a>
+                <a class="nav-item"
+                   href="/product/kidpage.html">
+                    KIDS
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="other">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="input" type="text" name="search" placeholder="Search...">
+        </div>
+        <div class="login">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="icon cart-icon" onclick="goToCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </div>
+    </div>
+</header>
+<div class="detail-container">
         <!-- LEFT IMAGE -->
         <div class="detail-image">
             <img
@@ -113,7 +161,7 @@
                     onclick="addToCart()">
                     Add to Cart
                 </button>
-                <!-- <button class="wishlist">
+                    <!-- <button class="wishlist">
                     ♡
                 </button> -->
                 <div class="wishlist"><i id="wishlist-btn" onclick="toggleWishlist(this)" class="fa-solid fa-heart"></i></div>
