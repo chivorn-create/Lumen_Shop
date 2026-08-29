@@ -186,7 +186,7 @@ const products = {
         color : "Black"
     },
     kid8 : {
-        name : "Kids Product 1",
+        name : "Kids Product 8",
         image : "/img/Kids/kid8.jpg",
         price : "10.00",
         oldPrice : "20.00",
@@ -247,65 +247,153 @@ else {
         `;
 
 }
+
 /* =========================
    SIZE
 ========================= */
 
 let selectedSize = "";
-function selectSize(size) {
-    selectedSize = size;
-    document.getElementById("selectedSize")
-        .textContent = size;
-
-    document
-        .querySelectorAll(".size-buttons button")
-        .forEach(button => {
-
-            button.classList.remove("active");
-
-            if (button.textContent === size) {
-                button.classList.add("active");
-            }
-        });
-
-}
-/* =========================
-   QUANTITY
-========================= */
 let quantity = 1;
+
+
+function selectSize(size) {
+
+    selectedSize = size;
+
+    document.getElementById("selectedSize").textContent = size;
+
+}
+
+
 function increaseQuantity() {
+
     quantity++;
-    document.getElementById("quantity")
-        .textContent = quantity;
+
+    document.getElementById("quantity").textContent = quantity;
+
 }
+
+
 function decreaseQuantity() {
+
     if (quantity > 1) {
+
         quantity--;
-        document.getElementById("quantity")
-            .textContent = quantity;
+
+        document.getElementById("quantity").textContent = quantity;
+
     }
+
 }
-/* =========================
-   ADD TO CART
-========================= */
+// ================================
+// ADD TO CART
+// ================================
+
 function addToCart() {
+
+    // Make sure size is selected
     if (selectedSize === "") {
+
         alert("Please select a size.");
+
         return;
     }
-    console.log({
-        product: product.name,
-        price: product.price,
-        size: selectedSize,
-        quantity: quantity
-    });
-    alert(
-        product.name +
-        " added to cart!"
+
+    // Get existing cart
+    let cart =
+        JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Make sure price and quantity are numbers
+    const price =
+        parseFloat(product.price) || 0;
+
+    const oldPrice =
+        parseFloat(product.oldPrice) || 0;
+
+    const productQuantity =
+        parseInt(quantity) || 1;
+
+    // Check if same product + same size already exists
+    const existingProduct = cart.find(item =>
+        item.id === productId &&
+        item.size === selectedSize
     );
 
+    if (existingProduct) {
+
+        existingProduct.quantity += productQuantity;
+
+    } else {
+
+        // Create new product for cart
+        const cartProduct = {
+
+            id: productId,
+
+            name: product.name,
+
+            image: product.image,
+
+            price: price,
+
+            oldPrice: oldPrice,
+
+            discount: product.discount || "",
+
+            category:
+                product.category ||
+                product.type ||
+                product.productType ||
+                "Women Clothing",
+
+            color: product.color || "",
+
+            size: selectedSize,
+
+            quantity: productQuantity
+        };
+
+        cart.push(cartProduct);
+    }
+
+    // Save cart
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    // Go to cart
+    window.location.href =
+        "/carts/cart.html";
 }
+
 function toggleWishlist(i) {
   // បន្ថែម ឬលុប class "active" ពេល Click
   i.classList.toggle('active');
 }
+// ================================
+// CART ICON COUNT
+// ================================
+function updateCartCount() {
+    const cart =
+        JSON.parse(localStorage.getItem("cart")) || [];
+    const cartCount =
+        document.getElementById("cartCount");
+    if (cartCount) {
+        const totalItems = cart.reduce(
+            (total, item) => total + item.quantity,
+            0
+        );
+        cartCount.textContent = totalItems;
+    }
+}
+// ================================
+// GO TO CART
+// ================================
+function goToCart() {
+    window.location.href = "/carts/cart.html";
+}
+// ================================
+// LOAD CART COUNT
+// ================================
+updateCartCount();
