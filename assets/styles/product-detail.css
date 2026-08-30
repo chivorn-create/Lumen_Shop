@@ -150,7 +150,10 @@ body {
     border-radius: 5px;
     gap: 5px;
 }
-
+#icon{
+    font-size: 15px;
+    color: #BFC9D1;
+}
 .input {
     border: none;
     outline: none;
@@ -163,14 +166,13 @@ body {
    ICONS
 ================================= */
 
-.login,
-.icon {
+.login,.icon {
     cursor: pointer;
 }
 
-.login i,
-.icon i {
+.login i,.icon i {
     font-size: 20px;
+    color: #BFC9D1;
 }
 
 /* =========================
